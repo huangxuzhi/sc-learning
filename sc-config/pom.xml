@@ -5,20 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hxz</groupId>
-    <artifactId>sc-learning</artifactId>
+    <artifactId>sc-config</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <name>sc-learning</name>
-    <description>Spring Cloud learning project</description>
-
     <modules>
-        <module>eureka-server</module>
-        <module>service-hi</module>
-        <module>ribbon-service</module>
-        <module>service-feign</module>
-        <module>service-zuul</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
+    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -26,6 +19,7 @@
         <version>2.0.3.RELEASE</version>
         <relativePath/>
     </parent>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -62,5 +56,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
