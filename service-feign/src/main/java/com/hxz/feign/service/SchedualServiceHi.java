@@ -1,6 +1,7 @@
 package com.hxz.feign.service;
 
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,4 +20,8 @@ public interface SchedualServiceHi {
      */
     @GetMapping(value = "service-hi/hi")
     String sayHiFromClientOne(@RequestParam(value = "name") String name);
+
+
+    @GetMapping("hello")
+    String hello(@RequestParam(value = "name")String name);
 }

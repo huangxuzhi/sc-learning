@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer2:8769/eureka/
+#eureka.client.serviceUrl.defaultZone表示往另外一个服务中心注册自己，可形成注册中心集群
+
+spring:
+  application:
+    name: eurka-server
+  profiles: peer1

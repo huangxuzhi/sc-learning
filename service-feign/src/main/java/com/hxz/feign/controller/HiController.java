@@ -26,4 +26,9 @@ public class HiController {
         String services = "services:" + discoveryClient.getServices();
         return services;
     }
+
+    @GetMapping(value = "/hello")
+    public String sayhello(@RequestParam String name) {
+        return schedualServiceHi.hello(name);
+    }
 }

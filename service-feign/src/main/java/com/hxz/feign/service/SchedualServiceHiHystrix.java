@@ -10,4 +10,8 @@ public class SchedualServiceHiHystrix implements SchedualServiceHi {
         return "sorry," + name;
     }
 
+    @Override
+    public String hello(String name){
+        return "sorry,"+name;
+    }
 }
