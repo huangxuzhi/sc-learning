@@ -19,6 +19,7 @@
         <module>service-feign</module>
         <module>service-zuul</module>
         <module>zipkin</module>
+        <module>service-turbine</module>
     </modules>
 
     <parent>
